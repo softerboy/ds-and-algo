@@ -60,7 +60,7 @@ T ArrayList<T>::get(int index) {
 }
 
 template<typename T>
-ArrayList<T>::~ArrayList() { clear(); }
+ArrayList<T>::~ArrayList() { delete [] _items; }
 
 template<typename T>
 int ArrayList<T>::length() const {
