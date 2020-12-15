@@ -14,9 +14,13 @@ void testQueue(Queue<int>* queue) {
 
 int main() {
   auto aqueue = new ArrayQueue<int>();
+  auto lqueue = new LinkedQueue<int>();
 
   std::cout << "Testing array queue\n";
   testQueue(aqueue);
+
+  std::cout << "\nTesting linked queue\n";
+  testQueue(lqueue);
 
   delete aqueue;
   return 0;

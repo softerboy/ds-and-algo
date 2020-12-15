@@ -2,11 +2,14 @@
 #define __LINKED_QUEUE_H__
 
 #include "../Interfaces/Queue.h"
+#include "../Node/SingleLinkNode.h"
 
 template<typename T>
 class LinkedQueue : public Queue<T> {
  private:
   int _count;
+  SingleLinkNode<T>* _front;
+  SingleLinkNode<T>* _back;
 
  public:
   explicit LinkedQueue();
