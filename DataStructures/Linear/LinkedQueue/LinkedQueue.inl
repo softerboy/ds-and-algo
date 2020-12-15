@@ -28,7 +28,7 @@ T LinkedQueue<T>::dequeue() {
   // free up memeory
   delete temp;
 
-  // increase size
+  // decrease size
   _count--;
   return data;
 }
