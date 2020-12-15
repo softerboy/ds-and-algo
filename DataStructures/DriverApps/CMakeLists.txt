@@ -21,6 +21,7 @@ add_executable(
 add_executable(
         QueueProgram
         ../Linear/Interfaces/Queue.h
+        ../Linear/RingQueue/RingQueue.h
         ../Linear/Node/SingleLinkNode.h
         ../Linear/ArrayQueue/ArrayQueue.h
         ../Linear/LinkedQueue/LinkedQueue.h
