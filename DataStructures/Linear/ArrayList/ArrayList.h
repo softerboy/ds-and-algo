@@ -1,7 +1,7 @@
 #ifndef __ARRAY_LIST_H__
 #define __ARRAY_LIST_H__
 
-#include "List.h"
+#include "../Interfaces/List.h"
 
 template<typename T>
 class ArrayList : public List<T> {

@@ -9,7 +9,7 @@ template<typename T>
 class List {
  private:
   void operator=(const List &) {};    // protect assignment
-  List(const List &) {};              // protect copying
+  List(const List &) = default;              // protect copying
 
  public:
   List() = default;

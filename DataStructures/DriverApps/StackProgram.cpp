@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "ArrayStack.h"
-#include "LinkedStack.h"
+#include "../Linear/ArrayStack/ArrayStack.h"
+#include "../Linear/LinkedStack/LinkedStack.h"
 
 void testStack(Stack<int> *stack) {
     for (int i = 0; i < 10; ++i)

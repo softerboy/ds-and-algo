@@ -1,4 +1,4 @@
-#include "RangeError.h"
+#include "../../Errors/RangeError.h"
 
 template<typename T>
 LinkedList<T>::LinkedList() {

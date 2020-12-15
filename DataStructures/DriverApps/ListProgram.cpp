@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "ArrayList.h"
-#include "LinkedList.h"
+#include "../Linear/ArrayList/ArrayList.h"
+#include "../Linear/LinkedList/LinkedList.h"
 
 #define LOOP_COUNT 15
 

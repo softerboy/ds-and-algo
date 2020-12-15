@@ -1,7 +1,7 @@
 #include <climits>
 #include <algorithm>
 
-#include "RangeError.h"
+#include "../../Errors/RangeError.h"
 
 template<typename T>
 ArrayList<T>::ArrayList(int size) {

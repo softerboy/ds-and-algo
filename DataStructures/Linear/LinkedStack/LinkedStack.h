@@ -4,7 +4,7 @@
 #include <cassert>
 #include <cstdlib>
 
-#include "Stack.h"
+#include "../Interfaces/Stack.h"
 
 namespace {
 template<typename T>

@@ -1,7 +1,7 @@
 #ifndef __ARRAY_STACK_H__
 #define __ARRAY_STACK_H__
 
-#include "Stack.h"
+#include "../Interfaces/Stack.h"
 
 /**
  * Array based stack implementation

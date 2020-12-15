@@ -1,7 +1,7 @@
 #ifndef __LINKED_LIST_H__
 #define __LINKED_LIST_H__
 
-#include "List.h"
+#include "../Interfaces/List.h"
 
 namespace {
 template<typename T>
