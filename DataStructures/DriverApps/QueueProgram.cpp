@@ -2,6 +2,7 @@
 
 #include "../Linear/Interfaces/Queue.h"
 #include "../Linear/ArrayQueue/ArrayQueue.h"
+#include "../Linear/LinkedQueue/LinkedQueue.h"
 
 void testQueue(Queue<int>* queue) {
   for (int i = 0; i < 10; ++i) queue->enqueue(i);

@@ -5,28 +5,13 @@
 #include <cstdlib>
 
 #include "../Interfaces/Stack.h"
-
-namespace {
-template<typename T>
-class Node {
- private:
-  T _data;
-  Node<T> *_next;
-
- public:
-  explicit Node(const T &data, Node<T> *next = nullptr);
-
-  T data() const;
-
-  Node<T> *next() const;
-};
-}
+#include "../Node/SingleLinkNode.h"
 
 template<typename T>
 class LinkedStack : public Stack<T> {
  private:
   int _count;
-  Node<T> *_head;
+  SingleLinkNode<T> *_head;
 
  public:
   explicit LinkedStack();

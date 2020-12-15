@@ -1,18 +1,3 @@
-namespace {
-template<typename T>
-Node<T>::Node(const T &data, Node<T> *next): _data(data), _next(next) {}
-
-template<typename T>
-T Node<T>::data() const {
-    return _data;
-}
-
-template<typename T>
-Node<T> *Node<T>::next() const {
-    return _next;
-}
-}
-
 template<typename T>
 LinkedStack<T>::LinkedStack(): _count(0), _head(nullptr) {}
 
@@ -32,9 +17,9 @@ T LinkedStack<T>::pop() {
 template<typename T>
 void LinkedStack<T>::push(const T &item) {
     if (_head == NULL) {
-        _head = new Node<T>(item);
+        _head = new SingleLinkNode<T>(item);
     } else {
-        _head = new Node<T>(item, _head);
+        _head = new SingleLinkNode<T>(item, _head);
     }
     _count++;
 }
