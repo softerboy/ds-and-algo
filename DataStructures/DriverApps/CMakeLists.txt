@@ -15,3 +15,10 @@ add_executable(
         ../Linear/LinkedStack/LinkedStack.h
         StackProgram.cpp
 )
+
+add_executable(
+        QueueProgram
+        ../Linear/Interfaces/Queue.h
+        ../Linear/ArrayQueue/ArrayQueue.h
+        QueueProgram.cpp
+)

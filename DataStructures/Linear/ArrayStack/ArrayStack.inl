@@ -20,10 +20,9 @@ T ArrayStack<T>::pop() {
 
 template<typename T>
 void ArrayStack<T>::clear() {
-  delete[] _items;
-
   _count = 0;
-  _items = new T[_maxSize];
+  delete[] _items;
+  _items = nullptr;
 }
 
 template<typename T>
