@@ -2,6 +2,7 @@
 
 #include "../Linear/ArrayList/ArrayList.h"
 #include "../Linear/LinkedList/LinkedList.h"
+#include "../Linear/DoublyLinkedList/DoublyLinkedList.h"
 
 #define LOOP_COUNT 15
 
@@ -32,12 +33,20 @@ void testList(List<T> *list) {
 int main() {
   auto alist = new ArrayList<int>();
   auto llist = new LinkedList<int>();
+  auto dlist = new DoublyLinkedList<int>();
 
   std::cout << "Testing array list" << std::endl;
   testList(alist);
 
   std::cout << "\nTesting linked list" << std::endl;
   testList(llist);
+
+  std::cout << "\nTesting doubly linked list" << std::endl;
+  testList(dlist);
+
+  delete alist;
+  delete llist;
+  delete dlist;
 
   return 0;
 }

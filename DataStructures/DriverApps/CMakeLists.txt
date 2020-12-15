@@ -6,6 +6,7 @@ add_executable(
         ../Linear/Node/SingleLinkNode.h
         ../Linear/ArrayList/ArrayList.h
         ../Linear/LinkedList/LinkedList.h
+        ../Linear/DoublyLinkedList/DoublyLinkedList.h
         ListProgram.cpp
 )
 

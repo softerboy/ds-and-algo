@@ -3,16 +3,11 @@
 
 template<typename T>
 class SingleLinkNode {
- private:
+ public:
   T _data;
   SingleLinkNode<T> *_next;
 
- public:
   SingleLinkNode(const T &data, SingleLinkNode<T> *next = nullptr);
-
-  T data() const;
-  SingleLinkNode<T> *next() const;
-  void setNext(SingleLinkNode<T>* next);
 };
 
 #include "SingleLinkNode.inl"

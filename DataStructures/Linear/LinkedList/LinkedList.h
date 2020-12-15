@@ -21,7 +21,7 @@ class LinkedList : public List<T> {
 
   void insert(const T &item, int pos) override;
 
-  T remove(int index) override;
+  T remove(int pos) override;
 
   T get(int index) override;
 
