@@ -1,7 +1,7 @@
 #ifndef __DOUBLY_LINKED_LIST_H__
 #define __DOUBLY_LINKED_LIST_H__
 
-#include "../Node/DoublyLinkNode.h"
+#include "../../Nodes/DoublyLinkNode.h"
 
 /**
  * Doubly linked list implementation for list interface

@@ -4,9 +4,9 @@
 /**
  * Dictionary abstract class
  * @tparam Key record's key type
- * @tparam Value record's value type
+ * @tparam Record record's value type
  */
-template<typename Key, typename Value>
+template<typename Key, typename Record>
 class Dictionary {
  private:
   void operator=(const Dictionary &) {}           // protect assignment NOLINT(cert-oop54-cpp)
@@ -26,7 +26,7 @@ class Dictionary {
    * @param key The key for the record being inserted
    * @param value The record being inserted
    */
-  virtual void insert(const Key &key, const Value &value) = 0;
+  virtual void insert(const Key &key, const Record &value) = 0;
 
   /**
    * Remove and return a record
@@ -34,20 +34,20 @@ class Dictionary {
    * @return A matching record. if multiple records match "key",
    * remove an arbitrary one. Return nullptr if no record
    */
-  virtual Value *remove(const Key &key) = 0;
+  virtual Record *remove(const Key &key) = 0;
 
   /**
    * Remove and return arbitrary record from dictionary
    * @return The record removed, nullptr if none exists
    */
-  virtual Value *removeAny() = 0;
+  virtual Record *removeAny() = 0;
 
   /**
    * Return a record matching "key"
    * @param key The key of record to find
    * @return A record matching "key", nullptr if none exists
    */
-  virtual Value *find(const Key &key) = 0;
+  virtual Record *find(const Key &key) = 0;
 
   /**
    * @return Number of records in the dictionary

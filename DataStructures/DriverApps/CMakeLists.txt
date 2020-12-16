@@ -32,5 +32,6 @@ add_executable(
 add_executable(
         TreeProgram
         TreeProgram.cpp
+        ../Nodes/TreeNode.h
         ../Interfaces/Dictionary.h
 )

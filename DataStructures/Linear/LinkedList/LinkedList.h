@@ -1,8 +1,8 @@
 #ifndef __LINKED_LIST_H__
 #define __LINKED_LIST_H__
 
-#include "../Interfaces/List.h"
-#include "../Node/SingleLinkNode.h"
+#include "../../Interfaces/List.h"
+#include "../../Nodes/SingleLinkNode.h"
 
 template<typename T>
 class LinkedList : public List<T> {
