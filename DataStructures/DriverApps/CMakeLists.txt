@@ -35,3 +35,9 @@ add_executable(
         ../Nodes/TreeNode.h
         ../Interfaces/Dictionary.h
 )
+
+add_executable(
+        HeapProgram
+        HeapProgram.cpp
+        ../Tree/Heap/Heap.h
+)
