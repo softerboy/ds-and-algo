@@ -41,3 +41,8 @@ add_executable(
         HeapProgram.cpp
         ../Tree/Heap/Heap.h
 )
+
+add_executable(
+        HuffTree
+        HuffTree.cpp
+)
