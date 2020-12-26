@@ -9,7 +9,7 @@ int main() {
   std::cout << "Array before sorting:" << std::endl;
   printArray(arr, 7);
 
-  insertionSort<int>(arr, 7);
+  bubbleSort<int>(arr, 7);
   std::cout << "\nArray after sorting:" << std::endl;
   printArray(arr, 7);
 
