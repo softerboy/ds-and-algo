@@ -1,6 +1,8 @@
 #ifndef __HUFF_TREE_H__
 #define __HUFF_TREE_H__
 
+#include <functional>
+
 #include "../../Nodes/HuffNode.h"
 
 template<typename T>
@@ -23,8 +25,8 @@ class HuffTree {
   int weight() const;
 };
 
-template<typename T, typename Comparator>
-HuffTree<T> *buildHuff(HuffTree<T> *treeArray, int count);
+template<typename T>
+HuffTree<T> *buildHuff(HuffTree<T> *treeArray, int count, const std::function<bool(T,T)> &comp = std::less<T>());
 
 #include "HuffTree.inl"
 

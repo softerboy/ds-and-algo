@@ -27,11 +27,15 @@ void mergeSort(T array[], T temp[], int left, int right, const Comparator<T> &co
 template <typename T>
 void quickSort(T array[], int left, int right, const Comparator<T> &comp = std::less_equal<T>());
 
+template <typename T>
+void heapSort(T array[], int n, const Comparator<T>& comp = std::less<T>());
+
 #include "InsertionSort.inl"
 #include "BubbleSort.inl"
 #include "SelectionSort.inl"
 #include "ShellSort.inl"
 #include "MergeSort.inl"
 #include "QuickSort.inl"
+#include "HeapSort.inl"
 
 #endif // __INSERTION_SORT_H__

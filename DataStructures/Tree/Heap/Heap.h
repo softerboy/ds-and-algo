@@ -1,11 +1,16 @@
 #ifndef __HEAP_H__
 #define __HEAP_H__
 
+#include <functional>
 #include <algorithm>
 
-template<typename T, typename Compare>
+template <typename T>
+using Compare = std::function<bool(T, T)>;
+
+template<typename T>
 class Heap {
  private:
+  Compare<T> comp_;
   T *heap_;           // Pointer to the heap array
   int maxsize_;       // Maximum size of the heap
   int n_;             // Number of elements now in the heap
@@ -18,11 +23,11 @@ class Heap {
       int max = leftchild(pos);
       int rc = rightchild(pos);
       // if right child max than left child
-      if (rc < n_ && Compare::prior(heap_[rc], heap_[max]))
+      if (rc < n_ && comp_(heap_[rc], heap_[max]))
         max = rc; // set max to right child
 
       // if parent greater than max child sifting is done
-      if (Compare::prior(heap_[pos], heap_[max])) return;
+      if (comp_(heap_[pos], heap_[max])) return;
       // swap parent and max child
       std::swap(heap_[pos], heap_[max]);
       // move down
@@ -36,7 +41,7 @@ class Heap {
    * @param n Number of elements in heap
    * @param max Capacity of heap
    */
-  Heap(T *heap, int n, int max);
+  Heap(T *heap, int n, int max, const Compare<T> &compare = std::less<>());
 
   /**
    * @return The count of elements in the heap
