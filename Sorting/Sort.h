@@ -24,10 +24,14 @@ void shellSort(T array[], int n, const Comparator<T> &comp = std::less<T>());
 template <typename T>
 void mergeSort(T array[], T temp[], int left, int right, const Comparator<T> &comp = std::less<T>());
 
+template <typename T>
+void quickSort(T array[], int left, int right, const Comparator<T> &comp = std::less_equal<T>());
+
 #include "InsertionSort.inl"
 #include "BubbleSort.inl"
 #include "SelectionSort.inl"
 #include "ShellSort.inl"
 #include "MergeSort.inl"
+#include "QuickSort.inl"
 
 #endif // __INSERTION_SORT_H__
